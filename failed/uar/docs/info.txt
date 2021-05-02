@@ -1,0 +1,212 @@
+pi blockchain
+bitcoin fork
+
+
+
+
+ID:  AKIAJAE5BGTFOYZDVDUA
+Key: X6vJwxiMJ6XXA0/FrQm4OU2gwgJ/GRMJA7ethhpl
+Bucket: uar-patrick-code-test
+Subdirectory: cdt-03272018b
+Host: s3.us-east-2.amazonaws.com
+Available files to work with:
+900yearsold.wav
+a2002011001-e02.wav
+test_101_16kHz.wav
+test_102.mp3
+test_102.wav
+test_103.wav
+So, you can access the above files using cdt-03272018b/[filename]
+
+
+
+AWS_ACCESS_KEY_ID=AKIAJAE5BGTFOYZDVDUA
+AWS_SECRET_ACCESS_KEY=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
+
+AWS_ACCESS_KEY_ID=AKIAJAE5BGTFOYZDVDUA AWS_SECRET_ACCESS_KEY=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 
+
+
+
+Zoran Bankovic  - UAR C++ Mini-Project
+
+Up and Running Software - C++/S3 Mini-Project
+
+Overview:
+Implement a multi-threaded HTTP listener that performs the following operations via a REST interface
+WAV Info - Accepts an S3 path to a WAV file and returns the number of channels and sample rate of the WAV file with a JSON result. 
+MP3 to WAV - Accepts an S3 path to an MP3 file that should be converted to a WAV file and uploaded to the provided destination path with a JSON result including the file size of the resulting WAV file.
+
+Requirements:
+General Listener requirements
+Should respond to HTTP requests on port 8089 or whatever port is passed via the -p command line parameter
+Should be multi-threaded/multi-process with non-blocking socket
+Should build via make or cmake on Ubuntu 16.04 with gcc 5.4
+S3 credentials and bucket info can be hard-coded however should support subfolders of the bucket in the key
+Wav Info requirements
+Should process requests for path: /wav-info
+The parameter will be: wavkey (s3 key)
+The JSON result should look like:
+{
+  “channel_count”: [integer],
+  “sample_rate”: [integer],
+  “execution_time”: [float seconds]
+}
+Example request: /wav-info?wavkey=test1.wav
+You can extract this info via the header struct of the WAV file or using the soxi command line app in a shell
+MP3 to WAV requirements
+Should process requests for path /mp3-to-wav
+The parameters will be: mp3key (s3 key) and wavkey (s3 key)
+The JSON result should look like:
+{
+  “file_size”: [long bytes of new wav file],
+  “execution_time”: [float seconds]
+}
+Example request: /mp3-to-wav?mp3key=test2.mp3&wavkey=test2.wav
+This conversion can be performed using sox in a shell
+
+
+cdt-020718/
+cdt-020718/900yearsold.wav
+cdt-020718/a2002011001-e02.wav
+cdt-020718/test_101_16kHz.wav
+cdt-020718/test_102.mp3
+cdt-020718/test_102.wav
+cdt-020718/test_102fdsfdsf.wav
+cdt-020718/test_103.wav
+cdt-030718/
+cdt-030718/900yearsold.wav
+cdt-030718/a2002011001-e02.wav
+cdt-030718/test_101_16kHz.wav
+cdt-030718/test_102.mp3
+cdt-030718/test_102.wav
+cdt-030718/test_103.wav
+cdt-031218/
+cdt-031218/900yearsold.wav
+cdt-031218/a2002011001-e02.wav
+cdt-031218/test_101_16kHz.wav
+cdt-031218/test_102.mp3
+cdt-031218/test_102.wav
+cdt-031218/test_103.wav
+cdt-031218b/
+cdt-031218b/900yearsold.wav
+cdt-031218b/a2002011001-e02.wav
+cdt-031218b/mpthreetest.wav
+cdt-031218b/test_1.wav
+cdt-031218b/test_101_16kHz.wav
+cdt-031218b/test_102.mp3
+cdt-031218b/test_102.wav
+cdt-031218b/test_103.wav
+cdt-031218bmpthreetest.wav
+cdt-031318/900yearsold.wav
+cdt-031318/a2002011001-e02.wav
+cdt-031318/output10.wav
+cdt-031318/test.miki.txt
+cdt-031318/test_101_16kHz.wav
+cdt-031318/test_102.mp3
+cdt-031318/test_102.wav
+cdt-031318/test_102fdsfdsf.wav
+cdt-031318/test_103.wav
+cdt-031918/
+cdt-031918/900yearsold.wav
+cdt-031918/a2002011001-e02.wav
+cdt-031918/output10.wav
+cdt-031918/test.miki.txt
+cdt-031918/test_101_16kHz.wav
+cdt-031918/test_102.mp3
+cdt-031918/test_102.wav
+cdt-031918/test_102fdsfdsf.wav
+cdt-031918/test_103.wav
+cdt-032018/
+cdt-032018/900yearsold.wav
+cdt-032018/a2002011001-e02.wav
+cdt-032018/test_101_16kHz.wav
+cdt-032018/test_102.mp3
+cdt-032018/test_102.wav
+cdt-032018/test_103.wav
+cdt-032218/
+cdt-032218/900yearsold.wav
+cdt-032218/a2002011001-e02.wav
+cdt-032218/sm.wav
+cdt-032218/sm2.wav
+cdt-032218/subfolder/sm.wav
+cdt-032218/subfolder/sm2.wav
+cdt-032218/test_101_16kHz.wav
+cdt-032218/test_102.mp3
+cdt-032218/test_102.wav
+cdt-032218/test_103.wav
+cdt-03272018a/
+cdt-03272018a/900yearsold.wav
+cdt-03272018a/a2002011001-e02.wav
+cdt-03272018a/output10.wav
+cdt-03272018a/test.miki.txt
+cdt-03272018a/test_101_16kHz.wav
+cdt-03272018a/test_102.mp3
+cdt-03272018a/test_102.wav
+cdt-03272018a/test_102fdsfdsf.wav
+cdt-03272018a/test_103.wav
+cdt-03272018b/
+cdt-03272018b/100ka
+cdt-03272018b/900yearsold.wav
+cdt-03272018b/a2002011001-e02.wav
+cdt-03272018b/test_101_16kHz.wav
+cdt-03272018b/test_102.mp3
+cdt-03272018b/test_102.wav
+cdt-03272018b/test_102conv.wav
+cdt-03272018b/test_103.wav
+cdt-920/
+cdt-920/900yearsold.wav
+cdt-920/a2002011001-e02.wav
+cdt-920/test_101_16kHz.wav
+cdt-920/test_102.mp3
+cdt-920/test_102.wav
+cdt-920/test_103.wav
+cdt-920b/
+cdt-920b/900yearsold.wav
+cdt-920b/a2002011001-e02.wav
+cdt-920b/test_101_128k.mp3
+cdt-920b/test_101_16kHz.wav
+cdt-920b/test_102.mp3
+cdt-920b/test_103.wav
+cdt-922a/
+cdt-922a/900yearsold.wav
+cdt-922a/900yearsold_01.mp3
+cdt-922a/900yearsold_01.wav
+cdt-922a/a2002011001-e02.wav
+cdt-922a/temp/08fc38fd588310d3246ac3d589f2fae8.wav
+cdt-922a/temp/17b233d335ecfd019ce8c001e4f267cb.wav
+cdt-922a/temp/901bcc582d3f7cdb7e002605b417af58.wav
+cdt-922a/temp/91be848a61777f7440567692d1ff6147.wav
+cdt-922a/temp/b7e3ef7be5add6927ba17e67ffbe3e70.wav
+cdt-922a/temp/e458d13c88e9b4de16debf29b2bd050d.wav
+cdt-922a/test.mp3
+cdt-922a/test_101_16kHz.wav
+cdt-922a/test_103.wav
+cdt-925a/
+cdt-925a/900yearsold.wav
+cdt-925a/a2002011001-e02.wav
+cdt-925a/test_101_128k.mp3
+cdt-925a/test_101_16kHz.wav
+cdt-925a/test_102.mp3
+cdt-925a/test_103.wav
+cdt-925b/
+cdt-925b/900yearsold.wav
+cdt-925b/a2002011001-e02.wav
+cdt-925b/test_101_128k.mp3
+cdt-925b/test_101_16kHz.wav
+cdt-925b/test_102.mp3
+cdt-925b/test_102.wav
+cdt-925b/test_103.wav
+cdt-925b/test_199.wav
+cdt-925b/test_iii.wav
+cdt-925b/unittest.wav
+output1.wav
+output10.wav
+output3.wav
+output5.wav
+output7.wav
+output9.wav
+
+
+
+main: /mnt/d/workspace/aws/aws-sdk-cpp/aws-cpp-sdk-core/source/http/HttpClientFactory.cpp:186: std::shared_ptr<Aws::Http::HttpRequest> Aws::Http::CreateHttpRequest(const Aws::Http::URI&, Aws::Http::HttpMethod, const IOStreamFactory&): Assertion `s_HttpClientFactory' failed.
+

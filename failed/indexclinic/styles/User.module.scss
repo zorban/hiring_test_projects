@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.editor {
+  margin: 0;
+  width: 540px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px lightgray dashed;
+  textarea {
+    padding: 5px;
+    margin: 0;
+    border: 0;
+    width: 95%;
+    height: 80%;
+    margin-top: 5px;
+  }
+}
+.viewer {
+  margin: 0;
+  width: 540px;
+  height: 450px;
+  padding: 5px;
+}

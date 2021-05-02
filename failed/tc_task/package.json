@@ -1,0 +1,19 @@
+{
+  "name": "battle-simulator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@creamberry.rs:trade-core-test.git"
+  },
+  "author": "Zoran Bankovic",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "^3.2.1"
+  }
+}

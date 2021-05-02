@@ -1,0 +1,3 @@
+{ "node": 5, "node1": [ 1, 2, "tri" ], "node3": { "node31": 7 }   }
+
+{ "node0" : { "leaf0_0": "Jedna mlada dama seta uvek sama.", "leaf0_1": "Tko je to, sto je to?", "leaf0_2": "Node0 - Leaf0_2" }, "node1": { "node1_0": { "node1_0_0": { "leaf1_0_0_0": "Listic cetvrto koljeno.", "leaf1_0_0_1": "Brat listica leaf1_0_0_0 (cetvrto koljeno)." } } }, "leaf0": "Stari mudri list", "leaf1": "Brat starog mudrog lista leaf0." }

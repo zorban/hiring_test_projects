@@ -1,0 +1,37 @@
+Poštovani gospodine Bankoviću,
+
+Primili smo Vašu prijavu za radno mesto Front-end developera i pregledali Vaš CV. Zadovoljstvo nam je da se među kandidatima pojavio neko sa velikim iskustvom i kako Vi kažete prekvalifikovan za ovu poziciju.
+
+Praksa u našoj firmi je da kandidatima koji uđu u uži izbor, pošaljemo jedan mali test koji je potrebno uraditi.
+
+Sledi opis zadatka:
+
+Potrebno je na osnovu PSD dizajna, koji Vam šaljem u attachmentu, napraviti html5 / css3 / js stranicu. Kod zipujte, dajte mu ime po formatu ime_prezime.zip i pošaljite na ovaj mejl. Obeležene oblasti na JPG slici imaju sledeće značenje:
+
+1 - Link (u href stavite #)
+2 - Ovo je glavni meni, na hover link je podvucen (u href stavite #)
+3 - Link (u href stavite #); pozicija ovog linka je fiksirana; ako se stranica skroluje, on uvek ostaje u poziciji kao na slici
+4 - Link (u href stavite #)
+5 - Ovaj link sluzi za otvaranje popupa (u psdu layer "pop-up_upload"; potrebo je napraviti ovaj popup, stilizovati elemente forme; forma "ne mora raditi", to je posao backend developera). "Ladda up bild" je button (ili link) koji pokrece sistemski  popup za uploadovanje slike. "Skicka" je Submit button.
+6 - Ovaj link otvara popup (iz psda koji se nalazi u layeru pop-up_tävlingsregler)
+7 - Na ovom delu potrebno je napraviti "parallax" javascript efekat
+
+Parallax efekat se pokreće skrolovanjem stranice gore-dole. Layer koji je nazvan "Cupcake_paralax2" se kreće najbrže Layer pod nazivom "decoration_paralax1"  se kreće sporije od pomenutog. Svi ostali layeri unutar grupe "Part 1_This is how you..." su pozadina koja je fiksna.
+
+Kod stranice mora biti optimizovan za prikazivanje u svim aktuelnim browser-ima.
+
+Dostupan sam za sva Vasa pitanja u slučaju da pojedini delovi zadatka nisu dobro definisani ili opisani. Rok za izradu zadatka je petak, 27. april. Ukoliko Vam treba više vremena za izradu, molim Vas da mi javite.
+
+
+--
+S poštovanjem,
+
+Duško Šobić
+COO & Web Developer
+dusko.sobic@c-code.com
+
+C-Code Software d.o.o.
+Bulevar Arsenija Carnojevica 52/34, 6th floor
+Novi Beograd 11 070
+Serbia, Europe
+www.c-code.com

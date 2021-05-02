@@ -1,0 +1,14 @@
+Napravite stranicu u velicini 720x576 piksela. Leva trecina stranice (240x576 piksela) je meni, a ostatak (480x576) je sadrzaj.
+
+Levu trecinu, znaci meni, podelite na 8 dela po 72 piksela (8x72=576), sirina je 240 piksela. Od tih 8 delova, prvi deo je strelica gore, osmi deo je strelica dole, a srednjih 6 delova su menijske stavke.
+
+Napravite data strukturu, koja sadrzi strukturu meni-a, koja moze da sadrzi ili node-ove (koji imaju child node-ove) ili leaf-ove. Leaf sadrzi neki tekst, koji se pokazuje u desnoj trecini stranice, dok node sadrzi sub-node-ove.
+
+Javascript objekat mora da bude u JSON formatu.
+
+Napravite funkciju, koja ucita ovaj JSON objekat i popuni meni. Kada ucita meni, selektovan je prvi node. Kretanje kroz meni napravite sa tasterima gore/dole/levo/desno. Tasteri gore/dole pomicu se kroz stavke u meni-u. Taster levo vrati se jedan nivo gore, taster desno vrati se jedan nivo dole. Ako nivo gore ili nivo dole ne postoje, tasteri levo i desno ne rade nista.
+
+U slucaju da se focus-uje leaf, automatski na desnoj strani prikazite tekst, koji je specificiran u JSON strukturi.
+
+Ako imate neka dodatna pitanja, slobodno me kontaktirajte na ovaj e-mail.
+
